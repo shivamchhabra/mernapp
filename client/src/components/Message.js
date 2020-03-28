@@ -4,8 +4,7 @@ const renderMessageClassName = props => {
   let className = "alert ";
   if (props.message.msgError) className = className + "alert-danger";
   else className = className + "alert-success";
-  className = className + "text-center";
-
+  className = className + " text-center";
   return className;
 };
 
@@ -16,3 +15,5 @@ const Message = props => {
     </div>
   );
 };
+
+export default Message;
